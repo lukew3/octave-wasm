@@ -1,4 +1,4 @@
-FROM --platform=i386 i386/debian:buster
-ARG DEBIAN_FRONTEND=noninteractive
+FROM --platform=i386 i386/alpine
 
-RUN apt-get update && apt-get -y upgrade && apt-get -y install curl
+RUN apk add --no-cache octave
+ENTRYPOINT ["octave"]
