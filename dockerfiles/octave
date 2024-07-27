@@ -1,4 +1,4 @@
 FROM --platform=i386 i386/alpine
 
 RUN apk add --no-cache octave
-ENTRYPOINT ["octave"]
+ENTRYPOINT ["octave-cli"]
